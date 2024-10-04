@@ -10,7 +10,7 @@ logo = Image.open("VB.png")
 st.set_page_config(page_title="Assistant", initial_sidebar_state="auto" , page_icon=logo)
 st.sidebar.image(logo)
 st.sidebar.title("Welcome to your personal AI Sommelier")
-st.sidebar.divider()
+# st.sidebar.divider()
 st.sidebar.subheader("How can I help you today?")
 
 openai.api_type = st.secrets["TYPE"]
