@@ -5,11 +5,11 @@ import openai
 from PIL import Image
 
 # logo = Image.open("cbrands_logo.jpg")
-logo = Image.open("VB.png")
+logo = Image.open("eaton_logo.png")
 
 st.set_page_config(page_title="Assistant", initial_sidebar_state="auto" , page_icon=logo)
 st.sidebar.image(logo)
-st.sidebar.title("Welcome to your personal AI Sommelier")
+st.sidebar.title("Welcome to your personal virtual assistant")
 # st.sidebar.divider()
 st.sidebar.subheader("How can I help you today?")
 
