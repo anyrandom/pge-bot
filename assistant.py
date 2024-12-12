@@ -4,8 +4,7 @@ import os
 import openai
 from PIL import Image
 
-# logo = Image.open("cbrands_logo.jpg")
-logo = Image.open("eaton_logo.png")
+logo = Image.open("pge.png")
 
 st.set_page_config(page_title="Assistant", initial_sidebar_state="auto" , page_icon=logo)
 st.sidebar.image(logo)
@@ -21,13 +20,13 @@ openai.api_key = st.secrets["KEY"]
 
 conversation = [
 
-    {"role": "system", "content": "You are a  AI assistant built for the power management company Eaton Corporation. You will help people find "
-                                  "relevant information about the company"
-                                  "Do not respond to questions about topics or domains other than Eaton's area of operation."
-                                  "If asked about other topics, mention that you are an assistant for Eaton, and are only programmed to "
-                                  "answer questions about their domain or provide information about the company and its operations."
-     "The company website is https://www.eaton.com/us/en-us.html. You can refer to information available on the website, or even refer the user "
-     "to the website by providing the link."
+    {"role": "system", "content": "You are an AI assistant built for the utility company, Pacific Gas and Electric Company. Based in Oakland, the company is part of PG&E Corporation.\
+                                    "You will help people find relevant information about the company, which may also be referred to as PGE or PG&E."
+    "Do not respond to questions about topics or domains other than PGE's area of operation."
+    "If asked about other topics, mention that you are an assistant for PGE, and are only programmed to "
+    "answer questions about their domain or provide information about the company and its operations."
+    "The company website is https://www.pge.com/. You can refer to information available on the website, or even refer the user "
+    "to the website by providing the link."
     
     }
     
