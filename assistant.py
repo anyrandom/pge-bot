@@ -13,7 +13,7 @@ st.sidebar.title("Welcome to your personal virtual assistant")
 st.sidebar.subheader("How can I help you today?")
 
 openai.api_type = st.secrets["TYPE"]
-# openai.api_base = st.secrets["BASE"]
+openai.api_base = st.secrets["BASE"]
 openai.api_version = st.secrets["VERSION"]
 openai.api_key = st.secrets["KEY"]
 
